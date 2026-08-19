@@ -250,74 +250,89 @@ const [darkMode, setDarkMode] = useState(() => {
           </div>
 
           <div className="hero-visual reveal reveal-delay">
-            <div className="visual-glow"></div>
-            <div className="visual-circle"></div>
+  <div className="visual-glow"></div>
+  <div className="visual-circle"></div>
 
-            <div className="code-card">
-              <div className="code-top">
-                <div className="window-dots">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
+  <div className="code-card">
+    <div className="code-top">
+      <div className="window-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-                <span>developer.js</span>
+      <span>developer.js</span>
 
-                <div className="code-status">
-                  <span></span>
-                  live
-                </div>
-              </div>
+      <div className="code-status">
+        <span></span>
+        live
+      </div>
+    </div>
 
-              <div className="code-content">
-                <p>
-                  <span className="purple">const</span>{" "}
-                  <span className="blue">developer</span> = {"{"}
-                </p>
+    <div className="code-body">
+      <div className="code-content">
+        <p>
+          <span className="purple">const</span>{" "}
+          <span className="blue">developer</span> = {"{"}
+        </p>
 
-                <p className="indent">
-                  <span className="green">name</span>:{" "}
-                  <span className="orange">'Nirvik'</span>,
-                </p>
+        <p className="indent">
+          <span className="green">name</span>:{" "}
+          <span className="orange">'Nirvik'</span>,
+        </p>
 
-                <p className="indent">
-                  <span className="green">role</span>:{" "}
-                  <span className="orange">'Developer'</span>,
-                </p>
+        <p className="indent">
+          <span className="green">role</span>:{" "}
+          <span className="orange">'Developer'</span>,
+        </p>
 
-                <p className="indent">
-                  <span className="green">focus</span>:{" "}
-                  <span className="orange">'Data'</span>,
-                </p>
+        <p className="indent">
+          <span className="green">focus</span>:{" "}
+          <span className="orange">'Data'</span>,
+        </p>
 
-                <p className="indent">
-                  <span className="green">passion</span>:{" "}
-                  <span className="orange">'Building'</span>
-                </p>
+        <p className="indent">
+          <span className="green">passion</span>:{" "}
+          <span className="orange">'Building'</span>
+        </p>
 
-                <p>
-                  {"}"}
-                  <span className="cursor">_</span>
-                </p>
-              </div>
-            </div>
+        <p>
+          {"}"}
+          <span className="cursor">_</span>
+        </p>
+      </div>
 
-            <div className="floating-card card-one">
-              <Code2 size={18} />
-              <span>Build</span>
-            </div>
+      <div className="profile-photo">
+        <div className="profile-photo-ring">
+          <img src="/profile.jpg" alt="Nirvik Tamrakar" />
+        </div>
 
-            <div className="floating-card card-two">
-              <BarChart3 size={18} />
-              <span>Analyze</span>
-            </div>
+        <span className="profile-status">
+          <span></span>
+          available
+        </span>
+      </div>
+    </div>
+  </div> {/* <-- THIS WAS MISSING */}
 
-            <div className="floating-card card-three">
-              <Database size={18} />
-              <span>Data</span>
-            </div>
-          </div>
-        </section>
+  <div className="floating-card card-one">
+    <Code2 size={18} />
+    <span>Build</span>
+  </div>
+
+  <div className="floating-card card-two">
+    <BarChart3 size={18} />
+    <span>Analyze</span>
+  </div>
+
+  <div className="floating-card card-three">
+    <Database size={18} />
+    <span>Data</span>
+  </div>
+</div>
+
+</section>
+
 
         {/* ABOUT */}
         <section id="about" className="section about">
