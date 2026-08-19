@@ -1,0 +1,356 @@
+/* =========================================================
+   PROJECTS PAGE
+========================================================= */
+
+.projects-page {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+
+/* =========================================================
+   PROJECTS PAGE REVEAL ANIMATION
+========================================================= */
+
+.projects-reveal {
+  opacity: 0;
+  transform: translateY(12px);
+
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+
+  transition-delay: var(--delay, 0ms);
+}
+
+.projects-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* =========================================================
+   PROJECTS MAIN
+========================================================= */
+
+.projects-page-main {
+  width: min(1180px, calc(100% - 48px));
+  margin: auto;
+
+  /*
+    Navbar is fixed at 76px,
+    so give the page enough top spacing.
+  */
+  padding: 170px 0 150px;
+}
+
+
+/* =========================================================
+   PROJECTS HEADING
+========================================================= */
+
+.projects-page-heading > span {
+  display: inline-block;
+
+  font-family: "DM Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 2px;
+
+  color: var(--text-muted);
+}
+
+.projects-page-heading h1 {
+  max-width: 700px;
+
+  margin-top: 20px;
+
+  font-size: clamp(65px, 9vw, 120px);
+  line-height: 0.9;
+
+  letter-spacing: -5px;
+  font-weight: 800;
+}
+
+.projects-page-heading h1 em {
+  font-style: normal;
+  color: var(--text-muted);
+}
+
+.projects-page-heading p {
+  max-width: 560px;
+
+  margin-top: 30px;
+
+  color: var(--text-soft);
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   PROJECT LIST
+========================================================= */
+
+.projects-page-list {
+  margin-top: 100px;
+
+  border-top: 1px solid var(--border);
+}
+
+
+/* =========================================================
+   PROJECT CARD
+========================================================= */
+
+.projects-page-card {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 80px 1fr 55px;
+
+  gap: 30px;
+
+  padding: 55px 15px;
+
+  border-bottom: 1px solid var(--border);
+
+  transition:
+    padding 0.35s ease,
+    background 0.35s ease;
+}
+
+
+/* Left hover indicator */
+
+.projects-page-card::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 2px;
+  height: 0;
+
+  background: var(--text);
+
+  transition: height 0.35s ease;
+}
+
+
+/* Card hover */
+
+.projects-page-card:hover {
+  padding-left: 28px;
+  background: var(--accent-soft);
+}
+
+.projects-page-card:hover::before {
+  height: 100%;
+}
+
+
+/* =========================================================
+   PROJECT NUMBER
+========================================================= */
+
+.projects-page-number {
+  font-family: "DM Mono", monospace;
+
+  font-size: 11px;
+
+  color: var(--text-muted);
+}
+
+
+/* =========================================================
+   PROJECT CATEGORY
+========================================================= */
+
+.projects-page-category {
+  font-family: "DM Mono", monospace;
+
+  font-size: 10px;
+  letter-spacing: 1.5px;
+
+  color: var(--text-muted);
+}
+
+
+/* =========================================================
+   PROJECT TITLE
+========================================================= */
+
+.projects-page-info h2 {
+  margin: 12px 0;
+
+  font-size: 34px;
+  letter-spacing: -1.5px;
+}
+
+
+/* =========================================================
+   PROJECT DESCRIPTION
+========================================================= */
+
+.projects-page-info p {
+  max-width: 700px;
+
+  color: var(--text-soft);
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   TECHNOLOGIES
+========================================================= */
+
+.projects-page-technologies {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-top: 22px;
+}
+
+.projects-page-technologies span {
+  padding: 7px 10px;
+
+  border: 1px solid var(--border);
+  border-radius: 100px;
+
+  background: var(--surface);
+
+  color: var(--text-soft);
+
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   PROJECT LINK
+========================================================= */
+
+.projects-page-link {
+  width: 45px;
+  height: 45px;
+
+  display: grid;
+  place-items: center;
+
+  align-self: center;
+
+  border: 1px solid var(--border);
+  border-radius: 50%;
+
+  background: var(--surface);
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.projects-page-link:hover {
+  background: var(--accent);
+  color: var(--inverse);
+
+  transform: rotate(8deg) scale(1.08);
+
+  box-shadow: 0 10px 30px var(--shadow);
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .projects-reveal,
+  .projects-reveal.is-visible {
+    opacity: 1;
+
+    transform: none;
+
+    transition: none;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .projects-page-main {
+    width: calc(100% - 30px);
+
+    padding: 120px 0 100px;
+  }
+
+
+  /* Heading */
+
+  .projects-page-heading h1 {
+    font-size: 65px;
+
+    letter-spacing: -4px;
+  }
+
+  .projects-page-heading p {
+    font-size: 14px;
+  }
+
+
+  /* Project list */
+
+  .projects-page-list {
+    margin-top: 70px;
+  }
+
+
+  /* Project cards */
+
+  .projects-page-card {
+    grid-template-columns: 40px 1fr;
+
+    gap: 15px;
+
+    padding: 40px 10px;
+  }
+
+  .projects-page-card:hover {
+    padding-left: 18px;
+  }
+
+
+  /* Project title */
+
+  .projects-page-info h2 {
+    font-size: 26px;
+
+    letter-spacing: -1px;
+  }
+
+
+  /* Project description */
+
+  .projects-page-info p {
+    font-size: 13px;
+  }
+
+
+  /* Project link */
+
+  .projects-page-link {
+    grid-column: 2;
+  }
+}
