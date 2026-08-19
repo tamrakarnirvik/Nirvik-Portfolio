@@ -451,7 +451,7 @@ const [darkMode, setDarkMode] = useState(() => {
               <div className="timeline-content">
                 <div className="timeline-dot"></div>
                 <h3>Back Office Admin / E-Commerce</h3>
-                <span>Cellapp Pvt. Ltd.</span>
+                <span>Mahaguthi Craft with Conscience</span>
 
                 <p>
                   Managing E-Commerce Operations, Social Media Management, 
