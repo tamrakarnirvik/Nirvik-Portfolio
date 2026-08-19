@@ -106,7 +106,7 @@ function Projects() {
         <div className="nav-container">
 
           <a href="/" className="logo" onClick={closeMenu}>
-            Nirvik Tamrakar<span></span>
+            __nirvik<span></span>
           </a>
 
           <nav
