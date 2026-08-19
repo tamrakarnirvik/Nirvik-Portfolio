@@ -4,17 +4,22 @@ import {
   BarChart3,
   Code2,
   Database,
-  GitBranch,
   Globe,
   Mail,
   MapPin,
   Menu,
   Moon,
-  Network,
   Send,
   Sun,
   X,
 } from "lucide-react";
+
+import {
+  FaGithub,
+  FaLinkedinIn,
+  FaInstagram,
+  FaFacebookF,
+} from "react-icons/fa";
 
 import "./App.css";
 
@@ -135,7 +140,7 @@ const [darkMode, setDarkMode] = useState(() => {
       <header className="navbar">
         <div className="nav-container">
           <a href="#home" className="logo" onClick={closeMenu}>
-            Nirvik Tamrakar<span></span>
+            __nirvik<span></span>
           </a>
 
           <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
@@ -220,33 +225,66 @@ const [darkMode, setDarkMode] = useState(() => {
             </div>
 
             <div className="hero-socials">
-              <a
-                href="#"
-                aria-label="GitHub"
-                className="social-icon"
-                title="GitHub"
-              >
-                <GitBranch size={19} />
-              </a>
 
-              <a
-                href="#"
-                aria-label="LinkedIn"
-                className="social-icon"
-                title="LinkedIn"
-              >
-                <Network size={19} />
-              </a>
+  {/* GitHub */}
+  <a
+    href="https://github.com/tamrakarnirvik"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="GitHub"
+    className="social-icon"
+    title="GitHub"
+  >
+    <FaGithub size={19} />
+  </a>
 
-              <a
-                href="mailto:your@email.com"
-                aria-label="Email"
-                className="social-icon"
-                title="Email"
-              >
-                <Mail size={19} />
-              </a>
-            </div>
+  {/* LinkedIn */}
+  <a
+    href="https://www.linkedin.com/in/nirvik-tamrakar-68759933a/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="LinkedIn"
+    className="social-icon"
+    title="LinkedIn"
+  >
+    <FaLinkedinIn size={19} />
+  </a>
+
+  {/* Instagram */}
+  <a
+    href="https://www.instagram.com/__nirvik/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Instagram"
+    className="social-icon"
+    title="Instagram"
+  >
+    <FaInstagram size={19} />
+  </a>
+
+  {/* Facebook */}
+  <a
+    href="https://www.facebook.com/nirviktamrakarr"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Facebook"
+    className="social-icon"
+    title="Facebook"
+  >
+    <FaFacebookF size={19} />
+  </a>
+
+  {/* Email */}
+  <a
+    href="mailto:nirviktamrakarr@email.com"
+    aria-label="Email"
+    className="social-icon"
+    title="Email"
+  >
+    <Mail size={19} />
+  </a>
+
+</div>
           </div>
 
           <div className="hero-visual reveal reveal-delay">
@@ -541,42 +579,89 @@ const [darkMode, setDarkMode] = useState(() => {
       </main>
 
       {/* FOOTER */}
-      <footer>
-        <div className="footer-container">
-          <div>
-            <a href="#home" className="footer-logo">
-              Nirvik Tamrakar<span></span>
-            </a>
+      {/* FOOTER */}
+<footer>
+  <div className="footer-container">
 
-            <p>Building ideas into digital experiences.</p>
-          </div>
+    <div>
+      <a href="#home" className="footer-logo">
+        Nirvik Tamrakar<span></span>
+      </a>
 
-          <div className="footer-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="/projects">Projects</a>
-            <a href="#contact">Contact</a>
-          </div>
+      <p>Building ideas into digital experiences.</p>
+    </div>
 
-          <div className="footer-socials">
-            <a href="#" aria-label="GitHub">
-              <GitBranch size={17} />
-            </a>
+    <div className="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="/projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
 
-            <a href="#" aria-label="LinkedIn">
-              <Network size={17} />
-            </a>
+    <div className="footer-socials">
 
-            <a href="mailto:your@email.com" aria-label="Email">
-              <Mail size={17} />
-            </a>
-          </div>
-        </div>
+      {/* GitHub */}
+      <a
+        href="https://github.com/tamrakarnirvik"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub"
+        title="GitHub"
+      >
+        <FaGithub size={17} />
+      </a>
 
-        <div className="copyright">
-          © 2026 Nirvik Tamrakar. All rights reserved.
-        </div>
-      </footer>
+      {/* LinkedIn */}
+      <a
+        href="https://www.linkedin.com/in/nirvik-tamrakar-68759933a/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+        title="LinkedIn"
+      >
+        <FaLinkedinIn size={17} />
+      </a>
+
+      {/* Instagram */}
+      <a
+        href="https://www.instagram.com/__nirvik/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram"
+        title="Instagram"
+      >
+        <FaInstagram size={17} />
+      </a>
+
+      {/* Facebook */}
+      <a
+        href="https://www.facebook.com/nirviktamrakarr"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Facebook"
+        title="Facebook"
+      >
+        <FaFacebookF size={17} />
+      </a>
+
+      {/* Email */}
+      <a
+        href="mailto:nirviktamrakarr@email.com"
+        aria-label="Email"
+        title="Email"
+      >
+        <Mail size={17} />
+      </a>
+
+    </div>
+
+  </div>
+
+  {/* COPYRIGHT */}
+  <div className="copyright">
+    © 2026 Nirvik Tamrakar. All rights reserved.
+  </div>
+</footer>
         </div>
     </>
   );
