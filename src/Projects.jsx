@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import {
   ArrowUpRight,
   ExternalLink,
+  MapPin,
   Menu,
   Moon,
   Sun,
@@ -73,8 +74,8 @@ function Projects() {
       title: "Kapada Sahayog",
       category: "FULL STACK WEB APPLICATION",
       description:
-        "A cloth donation management platform designed to connect donors with cloth banks and simplify the donation collection process.",
-      technologies: ["Django", "Python", "SQLite", "HTML", "CSS"],
+        "A web application for managing cloth donations, connecting donors with cloth banks, and keeping track of donation requests.",
+      technologies: ["Django", "Python", "SQLite", "HTML", "CSS", "JS"],
       link: "#",
     },
     {
@@ -82,7 +83,7 @@ function Projects() {
       title: "E-Commerce Management",
       category: "E-COMMERCE",
       description:
-        "Product management, content updates, SEO optimization and digital operations for an online handicraft store.",
+        "Worked on Product Management, Digital Marketing, Search Engine Optimization (SEO), website content, and day-to-day operations for an online authentic handicraft store.",
       technologies: ["WordPress", "WooCommerce", "SEO", "Canva"],
       link: "#",
     },
@@ -91,7 +92,7 @@ function Projects() {
       title: "Data Analytics Dashboard",
       category: "DATA ANALYTICS",
       description:
-        "An interactive analytics project focused on transforming raw business data into useful insights and visual reports.",
+        "A dashboard project for exploring business data, identifying trends, and presenting results through clear visualizations.",
       technologies: ["Excel", "SQL", "Python", "Power BI"],
       link: "#",
     },
@@ -189,19 +190,65 @@ function Projects() {
       {/* PROJECTS */}
       <main className="projects-page-main">
 
-        <div className="projects-page-heading projects-reveal">
-          <span>03 / PROJECTS</span>
+        <div className="projects-heading-layout">
 
-          <h1>
-            Selected
-            <em> work.</em>
-          </h1>
+  <div className="projects-page-heading projects-reveal">
+    <span>01 / PROJECTS</span>
 
-          <p>
-            A collection of projects that represent what I'm
-            currently learning, building and exploring.
-          </p>
-        </div>
+    <h1>
+      <span>Projects</span>
+      <em>I've worked on.</em>
+    </h1>
+
+    <p>
+      A selection of projects I've worked on across web development,
+      e-commerce, and data analytics.
+    </p>
+  </div>
+
+  <div className="project-id-card projects-reveal">
+    
+    <div className="id-card-top">
+      <span>NT</span>
+      <small>PORTFOLIO / 2026</small>
+    </div>
+
+    <div className="id-card-profile">
+      <div className="id-avatar">
+        NT
+      </div>
+
+      <div>
+        <h2>Nirvik Tamrakar</h2>
+        <p>Developer × Data</p>
+      </div>
+    </div>
+
+    <div className="id-card-divider"></div>
+
+    <div className="id-card-details">
+      <div>
+        <span>FOCUS</span>
+        <strong>Web & Analytics</strong>
+      </div>
+
+      <div>
+        <span>LOCATION</span>
+        <strong>
+          <MapPin size={13} />
+          Kathmandu, Nepal
+        </strong>
+      </div>
+    </div>
+
+    <div className="id-card-status">
+      <span></span>
+      Open to opportunities
+    </div>
+
+  </div>
+
+</div>
 
         <div className="projects-page-list">
 

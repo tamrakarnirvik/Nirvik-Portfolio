@@ -95,25 +95,25 @@ const [darkMode, setDarkMode] = useState(() => {
     {
       icon: <Code2 size={23} />,
       title: "Development",
-      description: "Building responsive web experiences and applications.",
+      description: "Developing responsive websites and web applications.",
       items: ["HTML", "CSS", "JavaScript", "React", "Django", "Python"],
     },
     {
       icon: <Database size={23} />,
       title: "Database",
-      description: "Working with structured data and database systems.",
+      description: "Working with databases and structured data.",
       items: ["SQL", "SQLite", "MySQL", "Database Design"],
     },
     {
       icon: <BarChart3 size={23} />,
       title: "Analytics",
-      description: "Turning raw information into useful business insights.",
+      description: "Analyzing data to find useful patterns and insights.",
       items: ["Excel", "Power BI", "Python", "Data Visualization"],
     },
     {
       icon: <Globe size={23} />,
       title: "Digital",
-      description: "Managing digital platforms, stores and online content.",
+      description: "Working with websites, e-commerce platforms, and digital content.",
       items: ["WordPress", "WooCommerce", "SEO", "Canva"],
     },
   ];
@@ -188,7 +188,7 @@ const [darkMode, setDarkMode] = useState(() => {
           <div className="hero-content reveal">
             <div className="availability">
               <span></span>
-              Available for opportunities
+              Open to Opportunities
             </div>
 
             <p className="eyebrow">HELLO, I'M</p>
@@ -205,8 +205,7 @@ const [darkMode, setDarkMode] = useState(() => {
             </h2>
 
             <p className="hero-description">
-              I build modern digital experiences, useful web applications and
-              data-driven solutions that turn ideas into something real.
+              I build web applications and data-driven solutions with a focus on practical, user-friendly experiences.
             </p>
 
             <div className="hero-buttons">
@@ -326,7 +325,7 @@ const [darkMode, setDarkMode] = useState(() => {
             <span>01 / ABOUT</span>
 
             <h2>
-              A little bit
+              A little
               <em> about me.</em>
             </h2>
           </div>
@@ -334,22 +333,20 @@ const [darkMode, setDarkMode] = useState(() => {
           <div className="about-grid">
             <div className="about-text reveal" style={{ "--delay": "80ms" }}>
               <p className="large-text">
-                I'm a technology enthusiast who enjoys building things that
-                are both <strong>useful</strong> and
-                <strong> visually engaging.</strong>
+                I'm interested in technology, web development, and data.
+                I enjoy building <strong>practical solutions</strong> that are simple to use and easy to <strong>understand</strong>.
               </p>
 
               <p>
-                My interests sit at the intersection of web development, data
-                analytics and digital experiences. I enjoy taking an idea,
-                understanding the problem behind it and turning it into a
-                practical solution.
+                My interests are mainly in web development and data analytics.
+                I enjoy understanding a problem, working through the details, 
+                and building a solution that serves a clear purpose.
               </p>
 
               <p>
-                I'm continuously learning new technologies and improving my
-                ability to work with data, design interfaces and build reliable
-                applications.
+                I'm currently expanding my skills in 
+                modern web technologies, databases, data analysis, 
+                and application development.
               </p>
 
               <a href="#contact" className="text-link">
@@ -386,8 +383,8 @@ const [darkMode, setDarkMode] = useState(() => {
             <span>02 / SKILLS</span>
 
             <h2>
-              Tools I use to
-              <em> build things.</em>
+              Technologies
+              <em> I work with.</em>
             </h2>
           </div>
 
@@ -438,13 +435,12 @@ const [darkMode, setDarkMode] = useState(() => {
 
               <div className="timeline-content">
                 <div className="timeline-dot"></div>
-                <h3>Back Office / E-Commerce</h3>
+                <h3>Back Office Admin / E-Commerce</h3>
                 <span>Cellapp Pvt. Ltd.</span>
 
                 <p>
-                  Working with e-commerce operations, product management,
-                  website content, digital marketing and online store
-                  management.
+                  Managing E-Commerce Operations, Social Media Management, 
+                  Digital Marketing, Search Engine Optimization(SEO), Product Information, Website Content, and Online Store Activities.
                 </p>
               </div>
             </div>
@@ -461,9 +457,8 @@ const [darkMode, setDarkMode] = useState(() => {
                 <span>Academic Project</span>
 
                 <p>
-                  Designed and developed a Django-based cloth donation
-                  management platform with donor forms, database management
-                  and an administrative interface.
+                  Developed a Django-based Cloth Donation Platform with 
+                  donor forms, database management and an admin interface.
                 </p>
               </div>
             </div>
@@ -480,8 +475,8 @@ const [darkMode, setDarkMode] = useState(() => {
                 <span>Independent Learning</span>
 
                 <p>
-                  Developing skills in Excel, SQL, Python, data visualization
-                  and business analytics.
+                  Currently building my skills in Excel, SQL, 
+                  Python, Data Visualization, and Business Analytics.
                 </p>
               </div>
             </div>
@@ -503,12 +498,12 @@ const [darkMode, setDarkMode] = useState(() => {
               </h2>
 
               <p>
-                Whether you want to collaborate, discuss a project, or simply
-                say hello, my inbox is always open.
+                Have a project in mind or want to get in touch? 
+                Feel free to send me a message.
               </p>
 
-              <a href="mailto:your@email.com" className="primary-button">
-                Send Me a Message
+              <a href="mailto:nirviktamrakarr@email.com" className="primary-button">
+                Get in Touch
                 <Send size={17} />
               </a>
             </div>
@@ -517,7 +512,7 @@ const [darkMode, setDarkMode] = useState(() => {
               <div>
                 <Mail size={19} />
                 <span>Email</span>
-                <a href="mailto:your@email.com">your@email.com</a>
+                <a href="mailto:nirviktamrakarr@email.com">nirviktamrakarr@email.com</a>
               </div>
 
               <div>
