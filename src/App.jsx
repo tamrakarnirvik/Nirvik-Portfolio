@@ -144,22 +144,30 @@ const [darkMode, setDarkMode] = useState(() => {
           </a>
 
           <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
-            <a href="#home" onClick={closeMenu}>
-              Home
-            </a>
-            <a href="#about" onClick={closeMenu}>
-              About
-            </a>
-            <a href="#skills" onClick={closeMenu}>
-              Skills
-            </a>
-            <a href="/projects" onClick={closeMenu}>
-            Projects
-            </a>
-            <a href="#contact" onClick={closeMenu}>
-              Contact
-            </a>
-          </nav>
+  <a href="#home" onClick={closeMenu}>
+    Home
+  </a>
+
+  <a href="#about" onClick={closeMenu}>
+    About
+  </a>
+
+  <a href="#skills" onClick={closeMenu}>
+    Skills
+  </a>
+
+  <a href="/projects" onClick={closeMenu}>
+    Projects
+  </a>
+
+  <a href="/CV.pdf" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
+    CV
+  </a>
+
+  <a href="#contact" onClick={closeMenu}>
+    Contact
+  </a>
+</nav>
 
           <div className="nav-actions">
             <button
@@ -214,15 +222,28 @@ const [darkMode, setDarkMode] = useState(() => {
             </p>
 
             <div className="hero-buttons">
-              <a href="/projects" className="primary-button">
-              View My Work
-              <ArrowUpRight size={18} />
-              </a>
+  <a href="/projects" className="primary-button">
+    View My Work
+    <ArrowUpRight size={18} />
+  </a>
 
-              <a href="#contact" className="secondary-button">
-                Get In Touch
-              </a>
-            </div>
+  <a
+  href="/CV.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="secondary-button"
+>
+  View CV
+</a>
+
+<a
+  href="/CV.pdf"
+  download="Nirvik Tamrakar CV.pdf"
+  className="secondary-button"
+>
+  Download CV
+</a>
+</div>
 
             <div className="hero-socials">
 
@@ -592,11 +613,20 @@ const [darkMode, setDarkMode] = useState(() => {
     </div>
 
     <div className="footer-links">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="/projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="/projects">Projects</a>
+
+  <a
+    href="/CV.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    CV
+  </a>
+
+  <a href="#contact">Contact</a>
+</div>
 
     <div className="footer-socials">
 

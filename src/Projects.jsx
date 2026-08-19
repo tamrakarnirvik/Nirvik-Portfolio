@@ -133,6 +133,13 @@ function Projects() {
               Projects
             </a>
 
+            <a href="/CV.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            onClick={closeMenu}>
+            CV
+            </a>
+
             <a href="/#contact" onClick={closeMenu}>
               Contact
             </a>
@@ -302,5 +309,6 @@ function Projects() {
     </div>
   );
 }
+
 
 export default Projects;
