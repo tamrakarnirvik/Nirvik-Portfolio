@@ -297,7 +297,7 @@ const [darkMode, setDarkMode] = useState(() => {
 
   {/* Email */}
   <a
-    href="mailto:nirviktamrakarr@email.com"
+    href="mailto:nirviktamrakarr@gmail.com"
     aria-label="Email"
     className="social-icon"
     title="Email"
@@ -576,7 +576,7 @@ const [darkMode, setDarkMode] = useState(() => {
                 Feel free to send me a message.
               </p>
 
-              <a href="mailto:nirviktamrakarr@email.com" className="primary-button">
+              <a href="mailto:nirviktamrakarr@gmail.com" className="primary-button">
                 Get in Touch
                 <Send size={17} />
               </a>
@@ -586,7 +586,7 @@ const [darkMode, setDarkMode] = useState(() => {
               <div>
                 <Mail size={19} />
                 <span>Email</span>
-                <a href="mailto:nirviktamrakarr@email.com">nirviktamrakarr@email.com</a>
+                <a href="mailto:nirviktamrakarr@gmail.com">nirviktamrakarr@gmail.com</a>
               </div>
 
               <div>
@@ -676,7 +676,7 @@ const [darkMode, setDarkMode] = useState(() => {
 
       {/* Email */}
       <a
-        href="mailto:nirviktamrakarr@email.com"
+        href="mailto:nirviktamrakarr@gmail.com"
         aria-label="Email"
         title="Email"
       >
